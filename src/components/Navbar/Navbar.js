@@ -1,4 +1,6 @@
 import React from 'react'
+import img2 from "../../assests/rvlogo2.png";
+import './navbar.css'
 
 export default function Navbar() {
   return (
@@ -11,8 +13,11 @@ export default function Navbar() {
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
+      <li className="nav-item" id="img2">
+      <img id="size" src={img2} alt="rvlogo" />   
+        </li>
         <li className="nav-item">
-          <a className="nav-link active text-white" aria-current="page" href="/">Home</a>
+          <a className="nav-link active text-white" id="home" aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
           <a className="nav-link text-white" href="/">Events</a>
